@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color changer</title>
+</head>
+<body>
+<script>
+window.onmousemove = function(ev){
+    var wp = (ev.x*256/window.innerWidth)|0;
+    var hp = (ev.y*256/window.innerHeight)|0;
+    document.body.style.backgroundColor = "rgb("+wp+","+hp+",0)";
+}
+</script>
+</body>
+</html>
